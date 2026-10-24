@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .parent{
+            position: relative;
+            width: 1000px;
+            display: flex;
+            margin: auto;
+            height: 500px;
+            border: 1px solid black;
+        }
+     .box1{
+        height: 100px;
+        width: 100px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border: 1px solid red;
+        text-align: center;
+        font-size: 100px;
+        transition: 800ms;
+     }
+     .parent:hover .box1{
+        left: 900px;
+        background-color: green;
+     }
+     .box2{
+        height: 100px;
+        width: 100px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        border: 1px solid red;
+        text-align: center;
+        font-size: 100px;
+        transition: 800ms;
+     }
+     .parent:hover .box2{
+        right: 900px;
+        background-color:orange;
+     }
+     
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+    </div>
+    
+</body>
+</html>
